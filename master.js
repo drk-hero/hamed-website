@@ -181,7 +181,7 @@ function _scroll() {
         _header_body.style.position = "relative"
         _header_body.style.top = "117rem"
         _navbar.style.backgroundColor = "rgb(255 255 255)"
-        _fake.style.height = "187vh"
+        _fake.style.height = "200vh"
     }
 }
 
