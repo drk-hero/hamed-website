@@ -132,7 +132,7 @@ _menu_burger.addEventListener("click", () => {
     }
     q++
 })
-let x, _st = 0
+let x, _st, _smt = 0
 _main.addEventListener("scroll", _scroll)
 
 function _scroll() {
@@ -158,11 +158,10 @@ function _scroll() {
             _call_div.style.border = "3px solid rgba(0,0,0,0.1)"
             _burger_span_one.style.backgroundColor = "#d0d2d2"
             _burger_span_tree.style.backgroundColor = "#d0d2d2"
-
-
         }
     }
     console.log(window.pageYOffset)
+    console.log(window.pageXOffset)
     if (window.pageYOffset <= 1800) {
         _header.style.transform = "rotate(-" + _st + "deg)"
         _containerF.style.transform = "rotate(+" + _st + "deg)"
@@ -181,7 +180,7 @@ function _scroll() {
         _header_body.style.position = "relative"
         _header_body.style.top = "117rem"
         _navbar.style.backgroundColor = "rgb(255 255 255)"
-        _fake.style.height = "200vh"
+        _fake.style.height = "250vh"
     }
 }
 
